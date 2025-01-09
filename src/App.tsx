@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import SimpleForm from "./components/1-simple-form";
 import ReactHookForm from "./components/2-react-hook-form";
+import ReactHookFormWithZod from "./components/3-react-hook-form-zod";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         />
         <Route path="/simple-form" element={<SimpleForm />} />
         <Route path="/react-hook-form" element={<ReactHookForm />} />
+        <Route path="/react-hook-form-zod" element={<ReactHookFormWithZod />} />
       </Routes>
     </BrowserRouter>
   );
