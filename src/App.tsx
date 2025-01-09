@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import SimpleForm from "./components/1-simple-form";
+import ReactHookForm from "./components/2-react-hook-form";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
             </div>
           }
         />
-
         <Route path="/simple-form" element={<SimpleForm />} />
+        <Route path="/react-hook-form" element={<ReactHookForm />} />
       </Routes>
     </BrowserRouter>
   );
