@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
+import SimpleForm from "./components/1-simple-form";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
             </div>
           }
         />
+
+        <Route path="/simple-form" element={<SimpleForm />} />
       </Routes>
     </BrowserRouter>
   );
